@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.1.0.8000
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B674B82D-D045-48BC-9F54-F6D04090F59A}"
+	ProjectSection(SolutionItems) = postProject
+		README.txt = README.txt
+		LICENSE.txt = LICENSE.txt
+		common.include = common.include
+		default.build = default.build
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mwm.Core", "Core\Mwm.Core.csproj", "{365013BB-C8AD-4DFD-A08C-43D298220004}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mwm.Test", "Test\Mwm.Test.csproj", "{F6EB4CF2-CDE8-42DE-B40E-6D5D40438310}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mwm.Presentation", "Presentation\Mwm.Presentation.csproj", "{94087D0D-74CA-48CC-85EF-78119A11672C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+		Debug|MCD = Debug|MCD
+		Release|MCD = Release|MCD
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{365013BB-C8AD-4DFD-A08C-43D298220004}.Debug|x86.Build.0 = Debug|x86
+		{365013BB-C8AD-4DFD-A08C-43D298220004}.Debug|x86.ActiveCfg = Debug|x86
+		{365013BB-C8AD-4DFD-A08C-43D298220004}.Release|x86.Build.0 = Release|x86
+		{365013BB-C8AD-4DFD-A08C-43D298220004}.Release|x86.ActiveCfg = Release|x86
+		{365013BB-C8AD-4DFD-A08C-43D298220004}.Debug|MCD.Build.0 = Debug|MCD
+		{365013BB-C8AD-4DFD-A08C-43D298220004}.Debug|MCD.ActiveCfg = Debug|MCD
+		{365013BB-C8AD-4DFD-A08C-43D298220004}.Release|MCD.Build.0 = Release|MCD
+		{365013BB-C8AD-4DFD-A08C-43D298220004}.Release|MCD.ActiveCfg = Release|MCD
+		{F6EB4CF2-CDE8-42DE-B40E-6D5D40438310}.Debug|x86.Build.0 = Debug|x86
+		{F6EB4CF2-CDE8-42DE-B40E-6D5D40438310}.Debug|x86.ActiveCfg = Debug|x86
+		{F6EB4CF2-CDE8-42DE-B40E-6D5D40438310}.Debug|MCD.Build.0 = Debug|x86
+		{F6EB4CF2-CDE8-42DE-B40E-6D5D40438310}.Debug|MCD.ActiveCfg = Debug|x86
+		{F6EB4CF2-CDE8-42DE-B40E-6D5D40438310}.Debug|Any CPU.Build.0 = Debug|x86
+		{F6EB4CF2-CDE8-42DE-B40E-6D5D40438310}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{F6EB4CF2-CDE8-42DE-B40E-6D5D40438310}.Release|x86.Build.0 = Release|x86
+		{F6EB4CF2-CDE8-42DE-B40E-6D5D40438310}.Release|x86.ActiveCfg = Release|x86
+		{F6EB4CF2-CDE8-42DE-B40E-6D5D40438310}.Release|MCD.Build.0 = Release|x86
+		{F6EB4CF2-CDE8-42DE-B40E-6D5D40438310}.Release|MCD.ActiveCfg = Release|x86
+		{F6EB4CF2-CDE8-42DE-B40E-6D5D40438310}.Release|Any CPU.Build.0 = Release|x86
+		{F6EB4CF2-CDE8-42DE-B40E-6D5D40438310}.Release|Any CPU.ActiveCfg = Release|x86
+		{94087D0D-74CA-48CC-85EF-78119A11672C}.Debug|x86.Build.0 = Debug|x86
+		{94087D0D-74CA-48CC-85EF-78119A11672C}.Debug|x86.ActiveCfg = Debug|x86
+		{94087D0D-74CA-48CC-85EF-78119A11672C}.Debug|MCD.Build.0 = Debug|x86
+		{94087D0D-74CA-48CC-85EF-78119A11672C}.Debug|MCD.ActiveCfg = Debug|x86
+		{94087D0D-74CA-48CC-85EF-78119A11672C}.Debug|Any CPU.Build.0 = Debug|x86
+		{94087D0D-74CA-48CC-85EF-78119A11672C}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{94087D0D-74CA-48CC-85EF-78119A11672C}.Release|x86.Build.0 = Release|x86
+		{94087D0D-74CA-48CC-85EF-78119A11672C}.Release|x86.ActiveCfg = Release|x86
+		{94087D0D-74CA-48CC-85EF-78119A11672C}.Release|MCD.Build.0 = Release|x86
+		{94087D0D-74CA-48CC-85EF-78119A11672C}.Release|MCD.ActiveCfg = Release|x86
+		{94087D0D-74CA-48CC-85EF-78119A11672C}.Release|Any CPU.Build.0 = Release|x86
+		{94087D0D-74CA-48CC-85EF-78119A11672C}.Release|Any CPU.ActiveCfg = Release|x86
+	EndGlobalSection
+EndGlobal

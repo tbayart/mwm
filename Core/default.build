@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<project name="Mwm" default="build">
+	<property name="dir.root" value="..\"/>
+	<include buildfile="${path::combine(dir.root, 'common.include')}"/>
+	
+	<property name="projectName" value="Mwm.Core" verbose="${verbose}"/>
+
+	<target name="prebuild">
+		<copy todir="Properties" verbose="${verbose}">
+			<fileset basedir="${dir.shared}">
+				<include name="Product.cs"/>
+				<include name="Version.cs"/>
+			</fileset>
+		</copy>
+	</target>
+	
+	<target name="build">
+		<msbuild project="${projectName}.csproj" target="Build" verbose="${verbose}">
+			<property name="Configuration" value="${configuration}"/>
+		</msbuild>
+	</target>
+	
+	<target name="postbuild">
+		<copy todir="${dir.output}" verbose="${verbose}">
+			<fileset basedir="bin">
+				<include name="${projectName}.dll"/>
+				<include name="${projectName}.xml"/>
+			</fileset>
+		</copy>
+	</target>
+	
+	<target name="preclean">
+		<delete verbose="${verbose}">
+			<fileset basedir="${dir.output}">
+				<include name="${projectName}.dll"/>
+				<include name="${projectName}.xml"/>
+			</fileset>
+		</delete>
+	</target>
+	
+	<target name="clean">
+		<msbuild project="${projectName}.csproj" target="Clean" verbose="${verbose}">
+			<property name="Configuration" value="${configuration}"/>
+		</msbuild>
+	</target>
+	
+	<target name="postclean">
+		<delete verbose="${verbose}">
+			<fileset basedir="Properties">
+				<include name="Product.cs"/>
+				<include name="Version.cs"/>
+			</fileset>
+		</delete>
+	</target>
+</project>

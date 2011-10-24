@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<project name="Mwm" default="build">
+	<property name="dir.root" value="."/>
+	<include buildfile="${path::combine(dir.root, 'common.include')}"/>
+	
+	<target name="prebuild">
+	
+	</target>
+	
+	<target name="build">
+		<nant buildfile="Core\default.build" target="build" verbose="${verbose}"/>
+		<nant buildfile="Presentation\default.build" target="build" verbose="${verbose}"/>
+		<nant buildfile="Help\default.build" target="build" verbose="${verbose}"/>
+		<nant buildfile="Test\default.build" target="build" verbose="${verbose}"/>
+	</target>
+	
+	<target name="postbuild">
+	
+	</target>
+	
+	<target name="preclean">
+	
+	</target>
+	
+	<target name="clean">
+		<nant buildfile="Test\default.build" target="clean" verbose="${verbose}"/>
+		<nant buildfile="Help\default.build" target="clean" verbose="${verbose}"/>
+		<nant buildfile="Presentation\default.build" target="clean" verbose="${verbose}"/>
+		<nant buildfile="Core\default.build" target="clean" verbose="${verbose}"/>
+	</target>
+	
+	<target name="postclean">
+	
+	</target>
+	
+	<target name="test">
+		<nant buildfile="Test\default.build" target="test" verbose="${verbose}"/>
+	</target>
+</project>

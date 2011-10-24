@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<project name="Mwm" default="build">
+	<property name="dir.root" value="..\"/>
+	<include buildfile="${path::combine(dir.root, 'common.include')}"/>
+	
+	<property name="projectName" value="Mwm" verbose="${verbose}"/>
+
+	<target name="prebuild">
+	</target>
+	
+	<target name="build">
+		<msbuild project="${projectName}.shfbproj" target="Build" verbose="${verbose}">
+			<property name="Configuration" value="${configuration}"/>
+		</msbuild>
+	</target>
+	
+	<target name="postbuild">
+		<copy todir="${dir.output}" verbose="${verbose}">
+			<fileset basedir="Output">
+				<include name="${projectName}.chm"/>
+			</fileset>
+		</copy>
+	</target>
+	
+	<target name="preclean">
+		<delete verbose="${verbose}">
+			<fileset basedir="${dir.output}">
+				<include name="${projectName}.chm"/>
+			</fileset>
+		</delete>
+	</target>
+	
+	<target name="clean">
+		<msbuild project="${projectName}.shfbproj" target="Clean" verbose="${verbose}">
+			<property name="Configuration" value="${configuration}"/>
+		</msbuild>
+	</target>
+	
+	<target name="postclean">
+	</target>
+</project>

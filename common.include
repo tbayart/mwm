@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<project name="Mwm" default="build">
+	<include buildfile="config.include" failonerror="false"/>
+
+	<!-- NAnt Settings -->
+	<property name="nant.settings.currentframework" value="net-4.0"/>
+	
+	<!-- Configuration -->
+	<property name="verbose" value="true" overwrite="false"/>
+	<property name="configuration" value="Debug" overwrite="false"/>
+	
+	<!-- Directories -->
+	<!-- dir.root must be defined in the including build file -->
+	
+	<property name="dir.shared" value="${path::combine(dir.root, 'Shared')}" overwrite="false" verbose="${verbose}"/>
+	<property name="dir.output" value="${path::combine(dir.root, 'Output')}" overwrite="false" verbose="${verbose}"/>
+	
+	<echo message="dir.root = ${dir.root}"/>
+	<echo message="dir.shared = ${dir.shared}"/>
+	<echo message="dir.output = ${dir.output}"/>
+	
+</project>
