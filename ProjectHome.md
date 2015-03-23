@@ -1,0 +1,1 @@
+Provides a basic framework for writing applications using MVVM techniques. In addition, it contains numerous other helper methods and classes, including a collection of extension methods.

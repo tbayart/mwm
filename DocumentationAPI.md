@@ -1,0 +1,1 @@
+Refer to the included CHM in the [binaries](https://code.google.com/p/mwm/downloads/list).
